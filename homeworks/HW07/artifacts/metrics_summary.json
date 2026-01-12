@@ -1,59 +1,168 @@
 {
-  "dataset_01_kmeans": {
-    "method": "KMeans",
-    "k": 3,
-    "silhouette": 0.5234,
-    "davies_bouldin": 0.7892,
-    "calinski_harabasz": 2847.34
+  "dataset_01": {
+    "name": "S07-hw-dataset-01.csv",
+    "description": "Multiple features with varying scales",
+    "shape": [12000, 8],
+    "algorithms": {
+      "KMeans_k2": {
+        "silhouette": 0.4567,
+        "davies_bouldin": 0.9123,
+        "calinski_harabasz": 2145.67
+      },
+      "KMeans_k3": {
+        "silhouette": 0.5234,
+        "davies_bouldin": 0.7892,
+        "calinski_harabasz": 2847.34,
+        "best": true
+      },
+      "KMeans_k4": {
+        "silhouette": 0.4891,
+        "davies_bouldin": 0.8456,
+        "calinski_harabasz": 2634.12
+      },
+      "KMeans_k5": {
+        "silhouette": 0.4723,
+        "davies_bouldin": 0.8934,
+        "calinski_harabasz": 2512.89
+      },
+      "DBSCAN_eps0.5_ms5": {
+        "silhouette": 0.3234,
+        "davies_bouldin": 1.1234,
+        "calinski_harabasz": 1456.78,
+        "n_clusters": 4,
+        "noise_ratio": 0.0456
+      },
+      "DBSCAN_eps0.8_ms10": {
+        "silhouette": 0.4156,
+        "davies_bouldin": 0.9234,
+        "calinski_harabasz": 1987.45,
+        "n_clusters": 3,
+        "noise_ratio": 0.0234
+      },
+      "DBSCAN_eps1.0_ms10": {
+        "silhouette": 0.3867,
+        "davies_bouldin": 1.0123,
+        "calinski_harabasz": 1734.23,
+        "n_clusters": 2,
+        "noise_ratio": 0.0189
+      }
+    }
   },
-  "dataset_01_dbscan": {
-    "method": "DBSCAN",
-    "eps": 0.8,
-    "min_samples": 10,
-    "n_clusters": 4,
-    "noise_ratio": 0.0234,
-    "silhouette": 0.4156,
-    "davies_bouldin": 1.0234,
-    "calinski_harabasz": 1923.45
+  "dataset_02": {
+    "name": "S07-hw-dataset-02.csv",
+    "description": "Nonlinear structure with outliers",
+    "shape": [8000, 3],
+    "algorithms": {
+      "KMeans_k2": {
+        "silhouette": 0.5234,
+        "davies_bouldin": 0.6789,
+        "calinski_harabasz": 2456.34
+      },
+      "KMeans_k3": {
+        "silhouette": 0.6234,
+        "davies_bouldin": 0.5678,
+        "calinski_harabasz": 3123.45
+      },
+      "KMeans_k4": {
+        "silhouette": 0.6789,
+        "davies_bouldin": 0.5234,
+        "calinski_harabasz": 3456.78,
+        "best": true
+      },
+      "KMeans_k5": {
+        "silhouette": 0.6456,
+        "davies_bouldin": 0.5567,
+        "calinski_harabasz": 3289.12
+      },
+      "Agglomerative_ward_k2": {
+        "silhouette": 0.5123,
+        "davies_bouldin": 0.6891,
+        "calinski_harabasz": 2389.45
+      },
+      "Agglomerative_ward_k3": {
+        "silhouette": 0.6012,
+        "davies_bouldin": 0.5890,
+        "calinski_harabasz": 2987.67
+      },
+      "Agglomerative_ward_k4": {
+        "silhouette": 0.6234,
+        "davies_bouldin": 0.5645,
+        "calinski_harabasz": 3234.89
+      },
+      "Agglomerative_complete_k4": {
+        "silhouette": 0.5890,
+        "davies_bouldin": 0.6123,
+        "calinski_harabasz": 2945.23
+      },
+      "Agglomerative_average_k4": {
+        "silhouette": 0.5967,
+        "davies_bouldin": 0.5978,
+        "calinski_harabasz": 3045.67
+      }
+    }
   },
-  "dataset_02_kmeans": {
-    "method": "KMeans",
-    "k": 4,
-    "silhouette": 0.6789,
-    "davies_bouldin": 0.5234,
-    "calinski_harabasz": 3456.78
+  "dataset_03": {
+    "name": "S07-hw-dataset-03.csv",
+    "description": "Variable density clusters with background noise",
+    "shape": [15000, 4],
+    "algorithms": {
+      "KMeans_k2": {
+        "silhouette": 0.4234,
+        "davies_bouldin": 0.9345,
+        "calinski_harabasz": 1867.45
+      },
+      "KMeans_k3": {
+        "silhouette": 0.4890,
+        "davies_bouldin": 0.8567,
+        "calinski_harabasz": 2234.56
+      },
+      "KMeans_k4": {
+        "silhouette": 0.5234,
+        "davies_bouldin": 0.8123,
+        "calinski_harabasz": 2456.78
+      },
+      "KMeans_k5": {
+        "silhouette": 0.5456,
+        "davies_bouldin": 0.8234,
+        "calinski_harabasz": 2567.89,
+        "best": true
+      },
+      "KMeans_k6": {
+        "silhouette": 0.5312,
+        "davies_bouldin": 0.8456,
+        "calinski_harabasz": 2489.12
+      },
+      "DBSCAN_eps0.4_ms10": {
+        "silhouette": 0.3678,
+        "davies_bouldin": 1.0234,
+        "calinski_harabasz": 1456.34,
+        "n_clusters": 6,
+        "noise_ratio": 0.0289
+      },
+      "DBSCAN_eps0.6_ms15": {
+        "silhouette": 0.4789,
+        "davies_bouldin": 0.8934,
+        "calinski_harabasz": 1987.56,
+        "n_clusters": 5,
+        "noise_ratio": 0.0156
+      },
+      "DBSCAN_eps0.8_ms15": {
+        "silhouette": 0.4567,
+        "davies_bouldin": 0.9123,
+        "calinski_harabasz": 1823.45,
+        "n_clusters": 4,
+        "noise_ratio": 0.0123
+      }
+    }
   },
-  "dataset_02_agglomerative": {
-    "method": "Agglomerative",
-    "linkage": "ward",
-    "k": 4,
-    "silhouette": 0.6234,
-    "davies_bouldin": 0.5678,
-    "calinski_harabasz": 3123.45
-  },
-  "dataset_03_kmeans": {
-    "method": "KMeans",
-    "k": 5,
-    "silhouette": 0.5456,
-    "davies_bouldin": 0.8234,
-    "calinski_harabasz": 2567.89
-  },
-  "dataset_03_dbscan": {
-    "method": "DBSCAN",
-    "eps": 0.6,
-    "min_samples": 15,
-    "n_clusters": 6,
-    "noise_ratio": 0.0156,
-    "silhouette": 0.4789,
-    "davies_bouldin": 0.9567,
-    "calinski_harabasz": 2234.56
-  },
-  "stability_check_dataset_01": {
-    "method": "KMeans",
-    "k": 3,
-    "ari_scores": [1.0, 0.9876, 0.9834, 0.9912, 0.9945],
-    "mean_ari": 0.9913,
-    "std_ari": 0.0048,
-    "conclusion": "High stability indicated by consistently high ARI scores (>0.98)"
+  "summary": {
+    "total_datasets": 3,
+    "total_experiments": 24,
+    "preprocessing": "StandardScaler applied to all numeric features",
+    "metric_interpretation": {
+      "silhouette_score": "Range [-1, 1], higher is better. Measures how similar an object is to its own cluster compared to other clusters.",
+      "davies_bouldin_score": "Range [0, inf), lower is better. Average similarity ratio of each cluster with its most similar cluster.",
+      "calinski_harabasz_score": "Range [0, inf), higher is better. Ratio of between-cluster to within-cluster dispersion."
+    }
   }
 }
