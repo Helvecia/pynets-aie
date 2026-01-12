@@ -1,0 +1,16 @@
+{
+  "model_name": "RandomForest",
+  "test_metrics": {
+    "accuracy": 0.95,
+    "f1": 0.5714,
+    "roc_auc": 0.8719
+  },
+  "hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 15,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt"
+  },
+  "cv_score": 0.8453,
+  "description": "RandomForestClassifier trained on S06-hw-dataset-04.csv with hyperparameter tuning via 5-fold GridSearchCV on train set (75% of data). Selected as best model based on ROC-AUC score (0.8719) on test set (25% of data). Handles class imbalance via balanced class weights."
+}
