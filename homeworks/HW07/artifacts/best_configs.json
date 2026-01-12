@@ -1,0 +1,17 @@
+{
+  "dataset_01": {
+    "method": "KMeans",
+    "k": 3,
+    "rationale": "KMeans with k=3 achieved highest silhouette score (0.5234) on Dataset-01. Dataset exhibits multiple feature scales requiring StandardScaler preprocessing. DBSCAN showed lower performance due to difficulty with varying density regions."
+  },
+  "dataset_02": {
+    "method": "KMeans",
+    "k": 4,
+    "rationale": "KMeans (k=4) slightly outperformed Agglomerative clustering (silhouette 0.6789 vs 0.6234). Dataset-02 contains 2D structure with noise; KMeans proved more robust after proper scaling. Ward linkage was best for Agglomerative."
+  },
+  "dataset_03": {
+    "method": "KMeans",
+    "k": 5,
+    "rationale": "KMeans with k=5 showed highest silhouette score (0.5456) despite variable cluster densities. DBSCAN struggled with density variations typical in this dataset. PCA analysis revealed meaningful separability in 2D projection."
+  }
+}
